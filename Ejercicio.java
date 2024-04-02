@@ -9,7 +9,7 @@ public class Ejercicio {
         boolean verificado;
 
         do {
-            binario = JOptionPane.showInputDialog("Ingrese un numero binario:");
+            binario = JOptionPane.showInputDialog("Ingrese un número binario:");
             verificado = true;
 
             for (int i = 0; i < binario.length(); i++) {
@@ -19,7 +19,7 @@ public class Ejercicio {
             }
 
             if (verificado == false) {
-                JOptionPane.showMessageDialog(null, "NÃšMERO INVALIDO, INGRESE UNO VALIDO");
+                JOptionPane.showMessageDialog(null, "NÚMERO INVÁLIDO, INGRESE UNO VÁLIDO");
             }
 
         } while (verificado == false);
@@ -28,7 +28,7 @@ public class Ejercicio {
         oct = Integer.toOctalString(dec);
         hex = Integer.toHexString(dec);
 
-        JOptionPane.showMessageDialog(null, "El numero binario " + binario + " es:\n"
+        JOptionPane.showMessageDialog(null, "El número binario " + binario + " es:\n"
                 + "en Decimal: " + dec + "\nen Octal: " + oct + "\nen Hexadecimal: " + hex);
 
     }
